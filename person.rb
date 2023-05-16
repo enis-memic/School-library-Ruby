@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'nameable'
 
 class Person < Nameable
@@ -18,7 +20,7 @@ class Person < Nameable
 
   def correct_name
     @name
-    end
+  end
 
   private
 
