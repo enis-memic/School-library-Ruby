@@ -68,6 +68,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Classes in Ruby**
+- **Decorator**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,7 +130,6 @@ You can deploy this project using: **Not available**.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Decorator
 - set up associations
 - add basic UI
 - refactor your code
