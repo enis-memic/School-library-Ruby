@@ -3,7 +3,7 @@ require_relative 'person'
 
 class CapitalizeDecorator < Decorator
     def initialize(nameable)
-        super()
+        super
         @nameable = nameable
     end
 
