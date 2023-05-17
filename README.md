@@ -14,7 +14,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -70,14 +69,9 @@
 - **Classes in Ruby**
 - **Decorator**
 - **Set up associations**
+- **UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo not available]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,7 +98,7 @@ This project does not require installation.
 **To run the project follow the following instruction:-**
 
 - Clone this [repository](https://github.com/enis-memic/School-library-Ruby) in your local machine with correct branch.
-- Run **ruby person.rb**
+- Run **ruby main.rb**
 
 ### Run tests
 
@@ -131,7 +125,6 @@ You can deploy this project using: **Not available**.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- add basic UI
 - refactor your code
 - preserve data
 - unit tests
