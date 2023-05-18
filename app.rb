@@ -48,14 +48,14 @@ class App
 
   def list_people
     @people.each do |person|
-      person.instance_variables.each do |var|
-        text = ''
-        value = person.instance_variable_get(var)
-        var = var.to_s.delete('@')
-        var = var.capitalize
-        text += "#{var}:#{value}" unless var.include?('Rentals') || var.include?('Classroom')
-        puts text
+      if person.is_a?(Student)
+        puts "[Student] Name: #{person.name}, ID: #{person.object_id}, Age: #{person.age}"
+      elsif person.is_a?(Teacher)
+        puts "[Teacher] Name: #{person.name}, ID: #{person.object_id}, Age: #{person.age}"
+      else
+        puts "Name: #{person.name}"
       end
+      puts "\n"
     end
   end
 
