@@ -18,31 +18,39 @@ module ModPeople
 
   def create_person
     puts 'Do you want to create a student(1) or a teacher(2)?'
-    choice = gets.chomp
+    choise = gets.chomp
 
-    if choice == '1'
-      puts 'Age:'
-      age = gets.chomp
-      puts 'Name:'
-      name = gets.chomp
-      puts 'Has parent permission? [Y/N]'
-      parent_permission = gets.chomp.upcase == 'Y'
-      student = Student.new(age, name, parent_permission)
-      @people.push(student)
-      puts 'You added student successfully'
-    elsif choice == '2'
-      puts 'Age:'
-      age = gets.chomp
-      puts 'Name:'
-      name = gets.chomp
-      puts 'Specialization:'
-      specialization = gets.chomp
-      teacher = Teacher.new(age, name, specialization)
-      @people.push(teacher)
-      puts 'You added teacher successfully'
+    if choise == '1'
+      create_student
+    elsif choise == '2'
+      create_teacher
     else
       puts 'Your input is wrong!'
     end
+  end
+
+  def create_student
+    puts 'Age:'
+    age = gets.chomp
+    puts 'Name:'
+    name = gets.chomp
+    puts 'Has parent permission? [Y/N]'
+    parent_permission = gets.chomp.upcase == 'Y'
+    student = Student.new(age, name, parent_permission)
+    @people.push(student)
+    puts 'You added student successfully'
+  end
+
+  def create_teacher
+    puts 'Age:'
+    age = gets.chomp
+    puts 'Name:'
+    name = gets.chomp
+    puts 'Specialization:'
+    specialization = gets.chomp
+    teacher = Teacher.new(age, name, specialization)
+    @people.push(teacher)
+    puts 'You added teacher successfully'
   end
 
   def people_with_index
