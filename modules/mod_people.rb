@@ -45,18 +45,6 @@ module ModPeople
     end
   end
 
-  def books_with_index
-    @books.each_with_index do |book, index|
-      text = "#{index}: "
-      book.instance_variables.each do |var|
-        val = book.instance_variable_get(var)
-        var = var.to_s.delete('@')
-        text += "#{var}:#{val} " unless var.include?('rentals') || var.include?('classroom')
-      end
-      puts text
-    end
-  end
-
   def people_with_index
     @people.each_with_index do |person, index|
       text = "#{index}: "
