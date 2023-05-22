@@ -8,13 +8,12 @@ require_relative 'modules/mod_book'
 require_relative 'modules/mod_people'
 require_relative 'modules/mod_rentals'
 
-
 class App
   attr_accessor :books, :rentals, :people
 
-include ModBook
-include ModPeople
-include ModRentals
+  include ModBook
+  include ModPeople
+  include ModRentals
 
   def initialize
     @books = []
