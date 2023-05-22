@@ -20,14 +20,11 @@ class Main
       choose_option
       option = gets.chomp
       break if option == '7'
+
       select.selected_option(option)
     end
   end
 end
 
-
-  main = Main.new
-  main.start
-
-
-
+main = Main.new
+main.start
