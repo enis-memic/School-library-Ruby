@@ -4,7 +4,7 @@ class Select
   def initialize
     @app = App.new
   end
-def selected_option(option)
+  def selected_option(option)
   case option  
   when '1'  
     @app.list_books
@@ -21,5 +21,6 @@ def selected_option(option)
   else   
     'Please select valid option from the list!' 
   end
+end
 end
 
