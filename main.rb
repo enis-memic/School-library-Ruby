@@ -1,4 +1,4 @@
-require_relative 'app'
+require_relative 'select'
 
 class Main
   def choose_option
@@ -14,23 +14,20 @@ class Main
   end
 
   def start
-    new_app = App.new
+    select = Select.new
     puts 'Welcome to School Library App!'
-
     loop do
       choose_option
       option = gets.chomp
-
       break if option == '7'
-
-      new_app.selected_option(option)
+      select.selected_option(option)
     end
   end
 end
 
-def main
-  app = Main.new
-  app.start
-end
 
-main
+  main = Main.new
+  main.start
+
+
+
