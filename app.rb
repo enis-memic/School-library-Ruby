@@ -7,6 +7,7 @@ require_relative 'person'
 require_relative 'modules/mod_book'
 require_relative 'modules/mod_people'
 require_relative 'modules/mod_rentals'
+require_relative 'read_data'
 
 class App
   attr_accessor :books, :rentals, :people
@@ -16,7 +17,7 @@ class App
   include ModRentals
 
   def initialize
-    @books = []
+    @books = ReadData.new.read_books
     @rentals = []
     @people = []
   end
