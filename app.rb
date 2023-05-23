@@ -21,5 +21,4 @@ class App
     @people = ReadData.new.read_people
     @rentals = ReadData.new.read_rentals(@books, @people)
   end
-
 end

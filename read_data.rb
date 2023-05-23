@@ -1,21 +1,20 @@
 require 'json'
 
 class ReadData
-def read_books
+  def read_books
     books = []
     return books unless File.exist?('./data/books.json')
 
     file = File.open('./data/books.json')
     data = JSON.parse(file.read)
     data.each do |book|
-        books << Book.new(book['title'], book['author'])
+      books << Book.new(book['title'], book['author'])
     end
     file.close
     books
+  end
 
-end
-
-def read_people
+  def read_people
     people = []
     return people unless File.exist?('./data/people.json')
 
@@ -23,7 +22,7 @@ def read_people
     data = JSON.parse(file.read)
     data.each do |person|
       if person['type'] == 'Student'
-        student = Student.new( person['age'],person['name'], person['has_permission'])
+        student = Student.new(person['age'], person['name'], person['has_permission'])
 
         people << student
       else
@@ -35,16 +34,16 @@ def read_people
     people
   end
 
-def read_rentals(books, people)
+  def read_rentals(books, people)
     rentals = []
     return rentals unless File.exist?('./data/rentals.json')
 
     file = File.open('./data/rentals.json')
     data = JSON.parse(file.read)
     data.each do |rental|
-        rentals << Rental.new(rental['date'], books[rental['book_index']], people[rental['people_index']])
+      rentals << Rental.new(rental['date'], books[rental['book_index']], people[rental['people_index']])
     end
     file.close
     rentals
-end
+  end
 end
