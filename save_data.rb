@@ -15,7 +15,26 @@ return if books_array.empty?
 check_file_exist('books')
 File.write('./data/books.json', JSON.pretty_generate(books_array))
 end
-
+def save_people(people)
+       people_array = []
+       people.each do |person|
+        person_obj = {
+            id: person.id
+            name: person.name,
+            age: person.age,
+            has_permission: person.parent_permission,
+            type: person.type
+            }
+            if person.type == 'Student'
+                person_obj[:classroom] = person.classroom
+            else
+                person_obj[:specialization] = person.specializationend
+                people_array << person_obj
+            end
+            return if people_array.empty?
+            check_file_exists('people')
+            File.write('./data/people.json', JSON.pretty_generate(people_array))
+end
 def save_rentals(rentals)
     rentals_array = []
     rentals.each do |rental|
