@@ -6,9 +6,9 @@ module ModPeople
   def list_people
     @people.each do |person|
       if person.is_a?(Student)
-        puts "[Student] Name: #{person.name}, ID: #{person.object_id}, Age: #{person.age}"
+        puts "[Student] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       elsif person.is_a?(Teacher)
-        puts "[Teacher] Name: #{person.name}, ID: #{person.object_id}, Age: #{person.age}"
+        puts "[Teacher] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       else
         puts "Name: #{person.name}"
       end

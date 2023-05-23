@@ -1,24 +1,12 @@
 [
   {
-    "date": "2023/05/09",
-    "title": "The Lord of the Rings",
-    "author": "Tolkien",
-    "id": 1,
-    "name": "Enis",
-    "age": 26,
-    "has_permission": false,
-    "type": "Student",
-    "classroom": "A"
+    "date": "25/05/2023",
+    "people_index": 0,
+    "book_index": 0
   },
   {
-    "date": "2023/05/10",
-    "title": "Game Of Thrones",
-    "author": "George Martin",
-    "id": 4,
-    "name": "Esther",
-    "age": 23,
-    "has_permission": true,
-    "type": "Teacher",
-    "specialization": "Math"
+    "date": "27/05/2023",
+    "people_index": 1,
+    "book_index": 1
   }
 ]

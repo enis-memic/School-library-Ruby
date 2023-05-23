@@ -1,17 +1,13 @@
 [
   {
-    "id": 1,
     "name": "Enis",
-    "age": 26,
-    "has_permission": false,
+    "age": "34",
     "type": "Student",
-    "classroom": "A1"
+    "has_permission": true
   },
   {
-    "id": 2,
-    "name": "Esther",
-    "age": 23,
-    "has_permission": true,
+    "name": "Shubham",
+    "age": "45",
     "type": "Teacher",
     "specialization": "Math"
   }

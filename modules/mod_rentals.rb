@@ -16,6 +16,7 @@ module ModRentals
     rental = Rental.new(date, book, person)
     @rentals.push(rental)
     puts 'Rental created successfully'
+    SaveData.new.save_rentals(@rentals, @books, @people)
   end
 
   def list_rentals
