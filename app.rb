@@ -8,6 +8,7 @@ require_relative 'modules/mod_book'
 require_relative 'modules/mod_people'
 require_relative 'modules/mod_rentals'
 require_relative 'read_data'
+require_relative 'save_data'
 
 class App
   attr_accessor :books, :rentals, :people
@@ -21,4 +22,11 @@ class App
     @rentals = []
     @people = []
   end
+
+  def quit_app
+  SaveData.new.save_books(@books)
+  puts 'Thank you for using this app! Now exiting...'
+  exit
+  end
+
 end
