@@ -18,7 +18,7 @@ class App
 
   def initialize
     @books = ReadData.new.read_books
-    @rentals = []
+    @rentals = ReadData.new.read_rentals
     @people = []
   end
 

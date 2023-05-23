@@ -27,6 +27,7 @@ module ModPeople
     else
       puts 'Your input is wrong!'
     end
+    SaveData.new.save_rentals(@rentals)
   end
 
   def create_student
