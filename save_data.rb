@@ -2,11 +2,10 @@ require 'json'
 require 'fileutils'
 
 class SaveData
-def self.create_file(path, array)
+def check_file_exist(filename)
     FileUtils.mkdir_p('./data')
-    FileUtils.touch(path) unless File.exist?(path)
-    File.write(path, JSON.pretty_generate(array))
-  end
+    FileUtils.touch('./data/books.json') if !File.exist?('./data/books,json') && filename == 'books'
+end
 def save_books(books)
 books_array = []
 books.each do |book|
