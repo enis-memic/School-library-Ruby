@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Enis",
+    "age": 26,
+    "has_permission": false,
+    "type": "Student",
+    "classroom": "A1"
+  },
+  {
+    "id": 2,
+    "name": "Esther",
+    "age": 23,
+    "has_permission": true,
+    "type": "Teacher",
+    "specialization": "Math"
+  }
+]
