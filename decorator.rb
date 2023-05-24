@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative 'nameable'
 
-class Decorator < Nameable
+class Decorator < Nameable # rubocop:todo Style/Documentation
   def initialize(nameable)
     super()
     @nameable = nameable

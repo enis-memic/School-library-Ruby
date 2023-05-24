@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require_relative '../book'
 require_relative '../app'
 require_relative '../save_data'
 
-module ModBook
+module ModBook # rubocop:todo Style/Documentation
   def list_books
     @books.each do |book|
       book.instance_variables.each do |var|

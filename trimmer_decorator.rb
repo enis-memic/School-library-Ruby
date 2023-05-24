@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require_relative 'decorator'
 require_relative 'person'
 require_relative 'capitalize_decorator'
 
-class TrimmerDecorator < Decorator
+class TrimmerDecorator < Decorator # rubocop:todo Style/Documentation
   def initialize(nameable)
     super
     @nameable = nameable

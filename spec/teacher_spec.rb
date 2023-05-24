@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require_relative 'spec_helper'
 
 describe Teacher do
   before :each do
     @teacher = Teacher.new(45, 'Esther', 'Math')
   end
-    
+
   it 'Checking Teacher instance variable' do
     expect(@teacher).to be_instance_of Teacher
   end
@@ -14,7 +16,7 @@ describe Teacher do
     expect(name).to eq 'Esther'
   end
 
-  it 'Checking the age of a teacher' do 
+  it 'Checking the age of a teacher' do
     age = @teacher.age
     expect(age).to eq 45
   end
@@ -22,7 +24,7 @@ describe Teacher do
   it 'Checking the specialization of teacher' do
     specialization = @teacher.specialization
     expect(specialization).to eq 'Math'
-  end 
+  end
 
   it 'Checking can_use_services' do
     services = @teacher.can_use_services?

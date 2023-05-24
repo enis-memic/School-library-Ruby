@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'json'
 
-class ReadData
+class ReadData # rubocop:todo Style/Documentation
   def read_books
     books = []
     return books unless File.exist?('./data/books.json')
@@ -14,7 +16,7 @@ class ReadData
     books
   end
 
-  def read_people
+  def read_people # rubocop:todo Metrics/AbcSize, Metrics/MethodLength
     people = []
     return people unless File.exist?('./data/people.json')
 

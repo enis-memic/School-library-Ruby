@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative 'person'
 
-class Teacher < Person
+class Teacher < Person # rubocop:todo Style/Documentation
   attr_reader :specialization
 
   def initialize(age, name, specialization)

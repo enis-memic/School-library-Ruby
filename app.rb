@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'teacher'
 require_relative 'book'
 require_relative 'rental'
@@ -9,7 +11,7 @@ require_relative 'modules/mod_people'
 require_relative 'modules/mod_rentals'
 require_relative 'read_data'
 
-class App
+class App # rubocop:todo Style/Documentation
   attr_accessor :books, :rentals, :people
 
   include ModBook

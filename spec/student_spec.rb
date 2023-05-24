@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require_relative 'spec_helper'
 
-describe Student do 
+describe Student do
   before :each do
-    @student = Student.new(18, 'Enis', false, 200) 
+    @student = Student.new(18, 'Enis', false, 200)
   end
 
   it 'Checking Student instance variable' do

@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative 'spec_helper'
 
-describe Person do
+describe Person do # rubocop:todo Metrics/BlockLength
   before :each do
     @person = Person.new(20, 'Enis')
   end
@@ -8,7 +10,6 @@ describe Person do
   it 'Should have a instance' do
     expect(@person).to be_instance_of Person
   end
-
 
   it 'Have an empty rentals' do
     rentals = @person.rentals

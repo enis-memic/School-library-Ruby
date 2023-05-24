@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'json'
 require 'fileutils'
 
-class SaveData
+class SaveData # rubocop:todo Style/Documentation
   def check_file_exist(filename)
     FileUtils.mkdir_p('./data')
     FileUtils.touch('./data/books.json') if !File.exist?('./data/books.json') && filename == 'books'
@@ -20,7 +22,7 @@ class SaveData
     File.write('./data/books.json', JSON.pretty_generate(books_array))
   end
 
-  def save_people(people)
+  def save_people(people) # rubocop:todo Metrics/MethodLength
     people_array = []
     people.each do |person|
       person_obj = {
@@ -42,7 +44,7 @@ class SaveData
     File.write('./data/people.json', JSON.pretty_generate(people_array))
   end
 
-  def save_rentals(rentals, books, people)
+  def save_rentals(rentals, books, people) # rubocop:todo Metrics/MethodLength
     rentals_array = []
     rentals.each do |rental|
       rental_obj = {

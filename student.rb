@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative 'person'
 
-class Student < Person
+class Student < Person # rubocop:todo Style/Documentation
   attr_accessor :classroom
   attr_reader :parent_permission
 

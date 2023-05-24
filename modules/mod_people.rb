@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require_relative '../person'
 require_relative '../student'
 require_relative '../teacher'
 
-module ModPeople
+module ModPeople # rubocop:todo Style/Documentation
   def list_people
     @people.each do |person|
       if person.is_a?(Student)

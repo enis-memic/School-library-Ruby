@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative 'nameable'
 
-class Person < Nameable
+class Person < Nameable # rubocop:todo Style/Documentation
   attr_accessor :id, :name, :age, :rentals
   attr_reader :parent_permission
 

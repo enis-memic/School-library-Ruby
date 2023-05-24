@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative 'select'
 
-class Main
+class Main # rubocop:todo Style/Documentation
   def choose_option
     puts ''
     puts 'Please choose an option by entering a number:'

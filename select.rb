@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 require_relative 'app'
 
-class Select
+class Select # rubocop:todo Style/Documentation
   def initialize
     @app = App.new
   end
 
-  def selected_option(option)
+  def selected_option(option) # rubocop:todo Metrics/MethodLength
     case option
     when '1'
       @app.list_books
