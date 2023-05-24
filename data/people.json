@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Enis",
+    "age": "34",
+    "type": "Student",
+    "has_permission": true
+  },
+  {
+    "name": "Shubham",
+    "age": "45",
+    "type": "Teacher",
+    "specialization": "Math"
+  }
+]

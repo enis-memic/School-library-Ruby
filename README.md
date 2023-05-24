@@ -71,6 +71,7 @@
 - **Set up associations**
 - **UI**
 - **Refactor code**
+- **Preserve data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,7 +132,7 @@ You can deploy this project using: **Not available**.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-- preserve data
+
 - unit tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

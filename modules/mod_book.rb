@@ -1,5 +1,6 @@
 require_relative '../book'
 require_relative '../app'
+require_relative '../save_data'
 
 module ModBook
   def list_books
@@ -23,6 +24,7 @@ module ModBook
     book = Book.new(title, author)
     @books.push(book)
     puts 'Book created successfully'
+    SaveData.new.save_books(@books)
   end
 
   def books_with_index
