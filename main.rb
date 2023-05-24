@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'select'
 
 class Main # rubocop:todo Style/Documentation

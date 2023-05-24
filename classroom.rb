@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Classroom # rubocop:todo Style/Documentation
   attr_accessor :label
 

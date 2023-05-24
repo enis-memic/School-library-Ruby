@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Rental # rubocop:todo Style/Documentation
   attr_accessor :date, :person, :book
 
