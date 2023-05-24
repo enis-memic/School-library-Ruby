@@ -72,6 +72,7 @@
 - **UI**
 - **Refactor code**
 - **Preserve data**
+- **unit tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,14 +127,6 @@ You can deploy this project using: **Not available**.
 - [Github](https://github.com/mumo-esther/mumo-esther)
 - [Linkedin](https://www.linkedin.com/in/esther-mawioo-58b636225/)
 - [Twitter](https://twitter.com/EstherMawioo)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- unit tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
