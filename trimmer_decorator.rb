@@ -2,7 +2,7 @@ require_relative 'decorator'
 require_relative 'person'
 require_relative 'capitalize_decorator'
 
-class TrimmerDecorator < Decorator # rubocop:todo Style/Documentation
+class TrimmerDecorator < Decorator
   def initialize(nameable)
     super
     @nameable = nameable

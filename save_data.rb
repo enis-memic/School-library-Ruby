@@ -1,7 +1,7 @@
 require 'json'
 require 'fileutils'
 
-class SaveData # rubocop:todo Style/Documentation
+class SaveData
   def check_file_exist(filename)
     FileUtils.mkdir_p('./data')
     FileUtils.touch('./data/books.json') if !File.exist?('./data/books.json') && filename == 'books'

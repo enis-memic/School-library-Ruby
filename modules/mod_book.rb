@@ -2,7 +2,7 @@ require_relative '../book'
 require_relative '../app'
 require_relative '../save_data'
 
-module ModBook # rubocop:todo Style/Documentation
+module ModBook
   def list_books
     @books.each do |book|
       book.instance_variables.each do |var|

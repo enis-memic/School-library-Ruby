@@ -1,9 +1,8 @@
 require_relative '../book'
 require_relative '../person'
 
-module ModRentals # rubocop:todo Style/Documentation
-  # rubocop:todo Metrics/MethodLength
-  def create_rental # rubocop:todo Metrics/AbcSize, Metrics/MethodLength
+module ModRentals
+  def create_rental
     puts 'Select a book from the following list by number'
     books_with_index
     selected_book = gets.chomp.to_i
@@ -19,9 +18,8 @@ module ModRentals # rubocop:todo Style/Documentation
     puts 'Rental created successfully'
     SaveData.new.save_rentals(@rentals, @books, @people)
   end
-  # rubocop:enable Metrics/MethodLength
 
-  def list_rentals # rubocop:todo Metrics/MethodLength
+  def list_rentals
     print 'To see person rentals enter the person ID: '
     id = gets.chomp.to_i
     puts 'Rented Books:'

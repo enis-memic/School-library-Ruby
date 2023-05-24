@@ -1,6 +1,6 @@
 require_relative 'spec_helper'
 
-describe Person do # rubocop:todo Metrics/BlockLength
+describe Person do
   before :each do
     @person = Person.new(20, 'Enis')
   end

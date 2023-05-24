@@ -1,4 +1,4 @@
-class Nameable # rubocop:todo Style/Documentation
+class Nameable
   def correct_name
     raise NotImplementedError, 'Method not implemented yet!'
   end

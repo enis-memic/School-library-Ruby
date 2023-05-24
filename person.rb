@@ -1,6 +1,6 @@
 require_relative 'nameable'
 
-class Person < Nameable # rubocop:todo Style/Documentation
+class Person < Nameable
   attr_accessor :id, :name, :age, :rentals
   attr_reader :parent_permission
 

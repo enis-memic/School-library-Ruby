@@ -1,6 +1,6 @@
 require 'json'
 
-class ReadData # rubocop:todo Style/Documentation
+class ReadData
   def read_books
     books = []
     return books unless File.exist?('./data/books.json')

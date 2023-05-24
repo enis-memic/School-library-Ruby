@@ -1,6 +1,6 @@
 require_relative 'person'
 
-class Student < Person # rubocop:todo Style/Documentation
+class Student < Person
   attr_accessor :classroom
   attr_reader :parent_permission
 

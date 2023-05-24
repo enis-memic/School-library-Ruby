@@ -1,11 +1,11 @@
 require_relative 'app'
 
-class Select # rubocop:todo Style/Documentation
+class Select
   def initialize
     @app = App.new
   end
 
-  def selected_option(option) # rubocop:todo Metrics/MethodLength
+  def selected_option(option)
     case option
     when '1'
       @app.list_books

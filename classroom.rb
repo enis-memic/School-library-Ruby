@@ -1,4 +1,4 @@
-class Classroom # rubocop:todo Style/Documentation
+class Classroom
   attr_accessor :label
 
   def initialize(label)

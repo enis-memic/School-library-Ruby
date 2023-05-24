@@ -1,6 +1,6 @@
 require_relative 'select'
 
-class Main # rubocop:todo Style/Documentation
+class Main
   def choose_option
     puts ''
     puts 'Please choose an option by entering a number:'

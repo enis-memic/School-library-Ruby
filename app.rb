@@ -9,7 +9,7 @@ require_relative 'modules/mod_people'
 require_relative 'modules/mod_rentals'
 require_relative 'read_data'
 
-class App # rubocop:todo Style/Documentation
+class App
   attr_accessor :books, :rentals, :people
 
   include ModBook
