@@ -14,7 +14,7 @@ class ReadData
     books
   end
 
-  def read_people # rubocop:todo Metrics/AbcSize, Metrics/MethodLength
+  def read_people
     people = []
     return people unless File.exist?('./data/people.json')
 

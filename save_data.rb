@@ -20,7 +20,7 @@ class SaveData
     File.write('./data/books.json', JSON.pretty_generate(books_array))
   end
 
-  def save_people(people) # rubocop:todo Metrics/MethodLength
+  def save_people(people)
     people_array = []
     people.each do |person|
       person_obj = {
@@ -42,7 +42,7 @@ class SaveData
     File.write('./data/people.json', JSON.pretty_generate(people_array))
   end
 
-  def save_rentals(rentals, books, people) # rubocop:todo Metrics/MethodLength
+  def save_rentals(rentals, books, people)
     rentals_array = []
     rentals.each do |rental|
       rental_obj = {
